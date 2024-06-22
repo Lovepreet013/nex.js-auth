@@ -93,3 +93,16 @@
       @apply bg-background text-foreground;
     }
   }
+
+  body::-webkit-scrollbar {
+    width: 7px; /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #cffafe;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #535f65;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+  }

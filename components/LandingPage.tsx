@@ -3,19 +3,19 @@ import Link from "next/link"
 export function LandingPage() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <div className="fixed h-screen w-full bg-gradient-to-br from-indigo-50 via-white to-cyan-100 z-0"></div>
-      <header className="px-4 lg:px-6 h-14 flex items-center z-10">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
+      <div className="fixed h-screen w-full bg-gradient-to-br from-blue-200 via-white to-cyan-100 z-0"></div>
+      <header className="px-8 lg:px-8 h-14 flex items-center z-10">
+        <Link href="/" className="flex items-center justify-center" prefetch={false}>
           <FeatherIcon className="h-6 w-6" />
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-sm font-medium px-6 py-2 bg-black rounded-full text-white hover:bg-primary/90" prefetch={false}>
+          <Link href="/login" className="text-sm font-medium px-6 py-2 bg-black rounded-full text-white hover:bg-primary/90" prefetch={false}>
             Login
           </Link>
         </nav>
       </header>
       <main className="flex-1 z-10">
-        <section className="w-full py-20 md:py-36 lg:py-22 xl:py-40">
+        <section className="w-full py-36 md:py-36 lg:py-22 xl:py-30">
           <div className="container px-4 md:px-6">
             <div className="text-center">
               <div className="flex flex-col justify-center space-y-4">
@@ -30,14 +30,14 @@ export function LandingPage() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row justify-center items-center">
                   <Link
-                    href="#"
+                    href="/login"
                     className="inline-flex h-10 items-center justify-center bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 rounded-full"
                     prefetch={false}
                   >
                     Try AI Journal
                   </Link>
                   <Link
-                    href="#"
+                    href="signup"
                     className="inline-flex h-10 items-center justify-center rounded-full border border-gray-300 bg-accent bg-opacity-10 px-8 text-sm font-medium text-gray-600 shadow-2xl hover:border-gray-800"
                     prefetch={false}
                   >
@@ -54,7 +54,7 @@ export function LandingPage() {
 }
 
 
-function FeatherIcon(props) {
+function FeatherIcon(props : any) {
   return (
     <svg
       {...props}

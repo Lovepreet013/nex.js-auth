@@ -1,10 +1,10 @@
-import { LandingPage } from "@/components/landing-page"
+import { LandingPage } from "@/components/LandingPage"
 
 const Home = () => {
   return (
-    <div>
+    <>
       <LandingPage/>
-    </div>
+    </>
   )
 }
 
